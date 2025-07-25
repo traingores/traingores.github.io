@@ -13,70 +13,63 @@
 </head>
 <body class="bg-purple-50">
 
-  <!-- Твой контент начинается здесь -->
-
   <!-- Блок 1 - Добро пожаловать -->
   <section id="welcome" class="min-h-screen flex flex-col justify-between items-center bg-gradient-to-b from-purple-200 to-purple-400 text-purple-900 p-8">
-  <div class="flex flex-col items-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Добро пожаловать!</h1>
-    <h2 class="text-5xl md:text-6xl font-extrabold mb-2">Тренировка Gores</h2>
-    <p class="text-xl md:text-2xl font-extrabold mb-8">46.174.48.103:53070</p>
-    <nav class="flex flex-col space-y-4 w-full max-w-xs">
-      <button onclick="document.getElementById('admins').scrollIntoView({behavior: 'smooth'})"
-        class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Наш состав администрации</button>
-      <button onclick="document.getElementById('rules').scrollIntoView({behavior: 'smooth'})"
-        class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Правила нашего сервера</button>
-      <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
-        class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Стоимость услуг на сервере и приобретение виртуальной валюты</button>
-    </nav>
-  </div>
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Добро пожаловать!</h1>
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-2">Тренировка Gores</h2>
+      <p class="text-xl md:text-2xl font-extrabold mb-8">46.174.48.103:53070</p>
+      <nav class="flex flex-col space-y-4 w-full max-w-xs">
+        <button onclick="document.getElementById('admins').scrollIntoView({behavior: 'smooth'})"
+          class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Наш состав администрации</button>
+        <button onclick="document.getElementById('rules').scrollIntoView({behavior: 'smooth'})"
+          class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Правила нашего сервера</button>
+        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+          class="px-6 py-4 bg-purple-600 text-white text-center font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700">Стоимость услуг на сервере и приобретение виртуальной валюты</button>
+      </nav>
+    </div>
 
-  <!-- Панели внизу -->
-  <div class="w-full mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-    <!-- Дизайнер сайта -->
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Дизайнер сайта</span>
-      <a href="https://t.me/hostqwd" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/hostqwd</a>
+    <!-- Панели внизу -->
+    <div class="w-full mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Дизайнер сайта</span>
+        <a href="https://t.me/hostqwd" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/hostqwd</a>
+      </div>
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Владелец сервера</span>
+        <a href="https://t.me/Acistant" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/Acistant</a>
+      </div>
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Зам Владельца</span>
+        <a href="https://t.me/faykoti" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/faykoti</a>
+      </div>
     </div>
-    <!-- Владелец сервера -->
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Владелец сервера</span>
-      <a href="https://t.me/Acistant" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/Acistant</a>
-    </div>
-    <!-- Зам Владельца -->
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Зам Владельца</span>
-      <a href="https://t.me/faykoti" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/faykoti</a>
-    </div>
-  </div>
   </section>
 
   <!-- Блок 2 - Правила -->
- <!-- Блок 2 - Правила -->
-<section id="rules" class="min-h-screen flex flex-col justify-center items-center bg-purple-100 text-purple-900 p-8 transition-all duration-700 overflow-hidden">
-  <h2 class="text-3xl md:text-5xl font-bold mb-8">Правила нашего сервера</h2>
+  <section id="rules" class="min-h-screen flex flex-col justify-center items-center bg-purple-100 text-purple-900 p-8 transition-all duration-700 overflow-hidden">
+    <h2 class="text-3xl md:text-5xl font-bold mb-8">Правила нашего сервера</h2>
 
-  <p class="mb-6 text-center max-w-xl">
-    Читы, реклама, использование ботов/таса и ложные доносы — Бан 10к Минут<br>
-    Обход бана — Бан 20к минут<br>
-    Вредоносные действия бан от 20к минут до навсегда<br>
-    Несогласованная реклама - бан 5к минут - повторно - навсегда <br>
-    РЕКЛАМА НАБОРА КЛАНА РАЗРЕШЕНО ✓<br>
-    Если кто-то выдаёт себя за админа - бан 3к минут<br>
-    Намеренный чрезмерный флуд/спам/оск — мут 1000 секунд<br>
-    Funvote: бан 120 минут<br>
-    Funvote — это когда делают голосование выгнать человека за просто так
-  </p>
+    <p class="mb-6 text-center max-w-xl">
+      Читы, реклама, использование ботов/таса и ложные доносы — Бан 10к Минут<br>
+      Обход бана — Бан 20к минут<br>
+      Вредоносные действия бан от 20к минут до навсегда<br>
+      Несогласованная реклама - бан 5к минут - повторно - навсегда <br>
+      РЕКЛАМА НАБОРА КЛАНА РАЗРЕШЕНО ✓<br>
+      Если кто-то выдаёт себя за админа - бан 3к минут<br>
+      Намеренный чрезмерный флуд/спам/оск — мут 1000 секунд<br>
+      Funvote: бан 120 минут<br>
+      Funvote — это когда делают голосование выгнать человека за просто так
+    </p>
 
-  <button onclick="toggleRules()"
-    class="w-full md:w-1/2 px-6 py-4 bg-purple-600 text-white font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700 mb-4">
-    Показать расширенные правила
-  </button>
+    <button onclick="toggleRules()"
+      class="w-full md:w-1/2 px-6 py-4 bg-purple-600 text-white font-semibold rounded-xl shadow-md transform transition hover:scale-105 hover:bg-purple-700 mb-4">
+      Показать расширенные правила
+    </button>
 
-  <!-- Расширенные Правила (скрытые по умолчанию) -->
-  <div id="extendedRules" class="max-w-4xl mt-6 overflow-hidden transition-all duration-700 ease-in-out max-h-0 opacity-0">
-    <p class="text-sm md:text-base text-left py-4">
-      Правила сообщества TeeFusion<br><br>
+    <div id="extendedRules" class="max-w-4xl mt-6 overflow-hidden transition-all duration-700 ease-in-out max-h-0 opacity-0">
+      <p class="text-sm md:text-base text-left py-4">
+         Правила сообщества TeeFusion<br><br>
 
       <strong>1. Определения</strong><br>
       1.1. TeeSports — игровое сообщество и серверное объединение для развития игровых модов в РФ.<br>
@@ -100,56 +93,34 @@
     </p>
   </div>
 </section>
+      </p>
+    </div>
+  </section>
 
-  <!-- Скрипт toggleRules -->
-  <script>
-    let isOpen = false;
-    function toggleRules() {
-      const rulesSection = document.getElementById('rules');
-      const extendedRules = document.getElementById('extendedRules');
-      const button = event.currentTarget;
-
-      if (!isOpen) {
-        extendedRules.style.maxHeight = extendedRules.scrollHeight + 'px';
-        extendedRules.style.opacity = '1';
-        button.innerText = "Скрыть расширенные правила";
-        rulesSection.classList.add('md:px-40');
-      } else {
-        extendedRules.style.maxHeight = '0px';
-        extendedRules.style.opacity = '0';
-        button.innerText = "Показать расширенные правила";
-        rulesSection.classList.remove('md:px-40');
-      }
-
-      isOpen = !isOpen;
-    }
-  </script>
-
-    <!-- Блок 4 - Администрация -->
+  <!-- Блок 4 - Администрация -->
   <section id="admins" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-300 to-purple-500 text-white p-8">
-  <h2 class="text-3xl md:text-5xl font-bold mb-12">Наш состав администрации</h2>
+    <h2 class="text-3xl md:text-5xl font-bold mb-12">Наш состав администрации</h2>
 
-  <!-- Владелец -->
-  <div class="w-full max-w-3xl grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Владелец</span>
-      <span class="text-lg">Biv</span>
-      <a href="https://t.me/Acistant" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/Acistant</a>
+    <div class="w-full max-w-3xl grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Владелец</span>
+        <span class="text-lg">Biv</span>
+        <a href="https://t.me/Acistant" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/Acistant</a>
+      </div>
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Заместитель влд</span>
+        <span class="text-lg">BunDeus</span>
+        <a href="https://t.me/faykoti" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/faykoti</a>
+      </div>
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Ninekeem</span>
+        <a href="https://t.me/ninekeem" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/ninekeem</a>
+      </div>
+      <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
+        <span class="font-semibold">Zavo</span>
+        <a href="https://t.me/alex_kulin" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/alex_kulin</a>
+      </div>
     </div>
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Заместитель влд</span>
-      <span class="text-lg">BunDeus</span>
-      <a href="https://t.me/faykoti" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/faykoti</a>
-    </div>
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Ninekeem</span>
-      <a href="https://t.me/ninekeem" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/ninekeem</a>
-    </div>
-    <div class="bg-purple-400 rounded-xl p-4 flex flex-col items-center">
-      <span class="font-semibold">Zavo</span>
-      <a href="https://t.me/alex_kulin" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/alex_kulin</a>
-    </div>
-  </div>
 
   <!-- Администрация -->
   <h3 class="text-2xl font-bold mb-6">Администрация</h3>
@@ -200,66 +171,26 @@
       <a href="https://t.me/razerceo" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/razerceo</a>
     </div>
   </div>
-</section>
+  </section>
 
+  <!-- Скрипт toggleRules -->
+  <script>
+    let isOpen = false;
+    function toggleRules() {
+      const extendedRules = document.getElementById('extendedRules');
+      const button = event.currentTarget;
+      if (!isOpen) {
+        extendedRules.style.maxHeight = extendedRules.scrollHeight + 'px';
+        extendedRules.style.opacity = '1';
+        button.innerText = "Скрыть расширенные правила";
+      } else {
+        extendedRules.style.maxHeight = '0px';
+        extendedRules.style.opacity = '0';
+        button.innerText = "Показать расширенные правила";
+      }
+      isOpen = !isOpen;
+    }
+  </script>
 
-<!-- Блок 5 - Услуги -->
-<section id="services" class="w-full flex flex-col items-center justify-center bg-gradient-to-b from-purple-300 to-purple-400 py-16 px-4">
-  <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center text-purple-900">Прайс лист</h2>
-  <p class="text-center mb-8 text-purple-800">За покупкой обращайтесь к <a href="https://t.me/Acistant" target="_blank" class="underline hover:text-purple-600 transition">t.me/Acistant</a></p>
-
-  <!-- VIP блок -->
-  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 mb-10 w-full max-w-md flex flex-col items-center">
-    <h3 class="text-2xl font-semibold mb-4 text-purple-900">VIP</h3>
-    <button class="mb-3 w-full bg-purple-500 hover:bg-purple-600 transition rounded-full py-2 text-white font-medium">VIP - 99 ₽</button>
-    <button class="w-full bg-purple-500 hover:bg-purple-600 transition rounded-full py-2 text-white font-medium">VIP+ - 149 ₽</button>
-  </div>
-
-  <!-- Покупка уровня -->
-  <h3 class="text-2xl font-bold mb-4 text-purple-900">Покупка уровня</h3>
-  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 mb-10 w-full max-w-md">
-    <ul class="space-y-2 text-center text-purple-900 font-medium">
-      <li>Уровень 10 = 99 ₽</li>
-      <li>Уровень 20 = 199 ₽</li>
-      <li>Уровень 30 = 349 ₽</li>
-      <li>Уровень 40 = 449 ₽</li>
-      <li>Уровень 50 = 699 ₽</li>
-      <li>Уровень 60 = 999 ₽</li>
-      <li>Уровень 70 = 1399 ₽</li>
-      <li>Уровень 80 = 1699 ₽</li>
-      <li>Уровень 90 = 1849 ₽</li>
-      <li>Уровень 100 = 1999 ₽</li>
-    </ul>
-  </div>
-
-  <!-- Скидки -->
-  <h3 class="text-2xl font-bold mb-4 text-purple-900">Скидки</h3>
-  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 w-full max-w-md">
-    <ul class="space-y-2 text-center text-purple-900 font-medium">
-      <li>Уровень 10 = 149 ₽</li>
-      <li>Уровень 20 = 249 ₽</li>
-      <li>Уровень 30 = 399 ₽</li>
-      <li>Уровень 40 = 549 ₽</li>
-      <li>Уровень 50 = 849 ₽</li>
-      <li>Уровень 60 = 1119 ₽</li>
-      <li>Уровень 70 = 1599 ₽</li>
-      <li>Уровень 80 = 1999 ₽</li>
-      <li>Уровень 90 = 2199 ₽</li>
-      <li>Уровень 100 = 2499 ₽</li>
-    </ul>
-  </div>
-</section>
-
-<script>
-  window.addEventListener('load', () => {
-    document.querySelectorAll('nav button').forEach((btn, i) => {
-      btn.classList.add('opacity-0', 'translate-y-4');
-      setTimeout(() => {
-        btn.classList.remove('opacity-0', 'translate-y-4');
-        btn.classList.add('transition', 'duration-700', 'opacity-100', 'translate-y-0');
-      }, i * 300);
-    });
-  });
-</script>
 </body>
 </html>
