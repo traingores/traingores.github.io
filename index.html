@@ -4,35 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrainGores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Убираем отступы и фон браузера */
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #000; /* например, полностью черный фон */
-      height: 100%;
-      overflow-x: hidden;
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
-<body>
-  <!-- Твоё содержимое здесь -->
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Добро пожаловать!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body class="bg-purple-50">
+<body class="bg-purple-50">
 
-    <!-- Блок 1 - Добро пожаловать -->
-<section id="welcome" class="min-h-screen flex flex-col justify-between items-center bg-gradient-to-b from-purple-200 to-purple-400 text-purple-900 p-8">
+  <!-- Твой контент начинается здесь -->
+
+  <!-- Блок 1 - Добро пожаловать -->
+  <section id="welcome" class="min-h-screen flex flex-col justify-between items-center bg-gradient-to-b from-purple-200 to-purple-400 text-purple-900 p-8">
   <div class="flex flex-col items-center">
     <h1 class="text-4xl md:text-5xl font-bold mb-4">Добро пожаловать!</h1>
     <h2 class="text-5xl md:text-6xl font-extrabold mb-2">Тренировка Gores</h2>
@@ -65,8 +49,10 @@
       <a href="https://t.me/faykoti" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">t.me/faykoti</a>
     </div>
   </div>
-</section>
-<!-- Блок 2 - Правила -->
+  </section>
+
+  <!-- Блок 2 - Правила -->
+ <!-- Блок 2 - Правила -->
 <section id="rules" class="min-h-screen flex flex-col justify-center items-center bg-purple-100 text-purple-900 p-8 transition-all duration-700 overflow-hidden">
   <h2 class="text-3xl md:text-5xl font-bold mb-8">Правила нашего сервера</h2>
 
@@ -115,31 +101,29 @@
   </div>
 </section>
 
-<script>
-  let isOpen = false;
-  function toggleRules() {
-    const rulesSection = document.getElementById('rules');
-    const extendedRules = document.getElementById('extendedRules');
-    const button = event.currentTarget;
+  <!-- Скрипт toggleRules -->
+  <script>
+    let isOpen = false;
+    function toggleRules() {
+      const rulesSection = document.getElementById('rules');
+      const extendedRules = document.getElementById('extendedRules');
+      const button = event.currentTarget;
 
-    if (!isOpen) {
-      // Открытие
-      extendedRules.style.maxHeight = extendedRules.scrollHeight + 'px';
-      extendedRules.style.opacity = '1';
-      button.innerText = "Скрыть расширенные правила";
-      rulesSection.classList.add('md:px-40');
-    } else {
-      // Закрытие
-      extendedRules.style.maxHeight = '0px';
-      extendedRules.style.opacity = '0';
-      button.innerText = "Показать расширенные правила";
-      rulesSection.classList.remove('md:px-40');
+      if (!isOpen) {
+        extendedRules.style.maxHeight = extendedRules.scrollHeight + 'px';
+        extendedRules.style.opacity = '1';
+        button.innerText = "Скрыть расширенные правила";
+        rulesSection.classList.add('md:px-40');
+      } else {
+        extendedRules.style.maxHeight = '0px';
+        extendedRules.style.opacity = '0';
+        button.innerText = "Показать расширенные правила";
+        rulesSection.classList.remove('md:px-40');
+      }
+
+      isOpen = !isOpen;
     }
-
-    isOpen = !isOpen;
-  }
-</script>
-
+  </script>
 
     <!-- Блок 4 - Администрация -->
   <section id="admins" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-purple-300 to-purple-500 text-white p-8">
@@ -216,9 +200,7 @@
       <a href="https://t.me/razerceo" target="_blank" class="mt-2 px-4 py-2 bg-purple-600 rounded-full hover:bg-purple-700 transition">t.me/razerceo</a>
     </div>
   </div>
-
 </section>
-
 
 
 <!-- Блок 5 - Услуги -->
