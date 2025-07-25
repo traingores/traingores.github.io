@@ -191,6 +191,63 @@
       isOpen = !isOpen;
     }
   </script>
+<!-- Блок 5 - Услуги -->
+<section id="services" class="w-full flex flex-col items-center justify-center bg-gradient-to-b from-purple-300 to-purple-400 py-16 px-4">
+  <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center text-purple-900">Прайс лист</h2>
+  <p class="text-center mb-8 text-purple-800">За покупкой обращайтесь к <a href="https://t.me/Acistant" target="_blank" class="underline hover:text-purple-600 transition">t.me/Acistant</a></p>
 
+  <!-- VIP блок -->
+  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 mb-10 w-full max-w-md flex flex-col items-center">
+    <h3 class="text-2xl font-semibold mb-4 text-purple-900">VIP</h3>
+    <button class="mb-3 w-full bg-purple-500 hover:bg-purple-600 transition rounded-full py-2 text-white font-medium">VIP - 99 ₽</button>
+    <button class="w-full bg-purple-500 hover:bg-purple-600 transition rounded-full py-2 text-white font-medium">VIP+ - 149 ₽</button>
+  </div>
+
+  <!-- Покупка уровня -->
+  <h3 class="text-2xl font-bold mb-4 text-purple-900">Покупка уровня</h3>
+  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 mb-10 w-full max-w-md">
+    <ul class="space-y-2 text-center text-purple-900 font-medium">
+      <li>Уровень 10 = 99 ₽</li>
+      <li>Уровень 20 = 199 ₽</li>
+      <li>Уровень 30 = 349 ₽</li>
+      <li>Уровень 40 = 449 ₽</li>
+      <li>Уровень 50 = 699 ₽</li>
+      <li>Уровень 60 = 999 ₽</li>
+      <li>Уровень 70 = 1399 ₽</li>
+      <li>Уровень 80 = 1699 ₽</li>
+      <li>Уровень 90 = 1849 ₽</li>
+      <li>Уровень 100 = 1999 ₽</li>
+    </ul>
+  </div>
+
+  <!-- Скидки -->
+  <h3 class="text-2xl font-bold mb-4 text-purple-900">Скидки</h3>
+  <div class="bg-purple-200 rounded-2xl shadow-lg p-6 w-full max-w-md">
+    <ul class="space-y-2 text-center text-purple-900 font-medium">
+      <li>Уровень 10 = 149 ₽</li>
+      <li>Уровень 20 = 249 ₽</li>
+      <li>Уровень 30 = 399 ₽</li>
+      <li>Уровень 40 = 549 ₽</li>
+      <li>Уровень 50 = 849 ₽</li>
+      <li>Уровень 60 = 1119 ₽</li>
+      <li>Уровень 70 = 1599 ₽</li>
+      <li>Уровень 80 = 1999 ₽</li>
+      <li>Уровень 90 = 2199 ₽</li>
+      <li>Уровень 100 = 2499 ₽</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', () => {
+    document.querySelectorAll('nav button').forEach((btn, i) => {
+      btn.classList.add('opacity-0', 'translate-y-4');
+      setTimeout(() => {
+        btn.classList.remove('opacity-0', 'translate-y-4');
+        btn.classList.add('transition', 'duration-700', 'opacity-100', 'translate-y-0');
+      }, i * 300);
+    });
+  });
+</script>
 </body>
 </html>
