@@ -6,6 +6,36 @@
   <title>TrainGores</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+  button,
+a[class*="bg-purple"],  
+a.rounded-full, 
+input[type="button"],
+input[type="submit"] {
+  transition: 
+    transform 0.15s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.15s cubic-bezier(.4,2,.6,1),
+    background 0.2s;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+}
+
+button:hover,
+a[class*="bg-purple"]:hover,
+a.rounded-full:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px 0 rgba(120, 80, 180, 0.18);
+}
+
+button:active,
+a[class*="bg-purple"]:active,
+a.rounded-full:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px 0 rgba(120, 80, 180, 0.25);
+}
     html {
       scroll-behavior: smooth;
     }
